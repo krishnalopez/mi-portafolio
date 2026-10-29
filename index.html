@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna | Full Stack Python Developer</title>
+
+    <!-- Fuente limpia de desarrollador -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navegación superior -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#hero" class="logo">&lt;<span>Krishna Ignacia López Hernández</span> /&gt;</a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                ☰
+            </button>
+
+            <nav class="nav" id="navMenu">
+                <ul>
+                    <li><a href="#sobre-mi">Estudiante de Programación de 4° medio, con experiencia en el desarrollo de
+                            proyectos académicos y atención al cliente. Durante mi formación he fortalecido competencias
+                            como el trabajo en equipo, la comunicación efectiva, la resolución de problemas y el
+                            pensamiento crítico. Me caracterizo por ser una persona responsable, comprometida y con
+                            disposición para aprender, aportar y asumir nuevos desafíos profesionales.</a></li>
+                    <li><a href="#stack">Stack</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#formacion">Educación Básica:
+                            Colegio Elsa Ramirez (San Ramón)
+                            Educación Media:
+                            Liceo Cormercial Vate Vicente Huidobro (San Ramón)
+                            - 4 Medio técnico en Programación </a></li>
+                    <li><a href="#contacto" class="btn-nav">Cel: +56 9 6278 8882</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero / Presentación -->
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <p class="code-badge"><code>$ python3 -m dev.portfolio</code></p>
+                <h1>[Tu Nombre Apellido]</h1>
+                <h2>Full Stack Python Developer</h2>
+                <p class="hero-bio">
+                    Especializado en el diseño y construcción de aplicaciones web escalables. Backend con
+                    <strong>FastAPI / Django</strong>, manejo de ORMs y diseño de APIs RESTful, complementado con
+                    frontend moderno en <strong>JavaScript / HTML5 / CSS3</strong>.
+                </p>
+                <div class="hero-actions">
+                    <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
+                    <a href="https://github.com/tu-usuario" target="_blank" rel="noopener"
+                        class="btn btn-secondary">GitHub</a>
+                    <a href="https://linkedin.com/in/tu-usuario" target="_blank" rel="noopener"
+                        class="btn btn-secondary">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre Mí -->
+        <section id="sobre-mi" class="section container">
+            <h2 class="section-title"><span>01.</span> Sobre Mí</h2>
+            <div class="about-content">
+                <p>
+                    Soy desarrollador enfocado en resolver problemas reales mediante código limpio, estructurado y
+                    mantenible. Mi fuerte reside en el backend con Python, donde trabajo con arquitectura en capas,
+                    validación estricta de esquemas y modelado eficiente de bases de datos relacionales.
+                </p>
+                <p>
+                    En el frontend me aseguro de consumir APIs de manera asíncrona, mantener componentes desacoplados y
+                    entregar interfaces ágiles sin sobrecargar el cliente con librerías innecesarias.
+                </p>
+            </div>
+        </section>
+
+        <!-- Stack Tecnológico -->
+        <section id="stack" class="section container">
+            <h2 class="section-title"><span>02.</span> Stack Tecnológico</h2>
+
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Python (3.10+)</li>
+                        <li>FastAPI & Django REST</li>
+                        <li>Flask</li>
+                        <li>Arquitectura de APIs RESTful</li>
+                    </ul>
+                </div>
+
+                <div class="tech-card">
+                    <h3>Bases de Datos</h3>
+                    <ul>
+                        <li>PostgreSQL & MySQL</li>
+                        <li>SQLAlchemy / Django ORM</li>
+                        <li>Diseño de Esquemas y ERD</li>
+                        <li>SQLite (Entornos de dev)</li>
+                    </ul>
+                </div>
+
+                <div class="tech-card">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>JavaScript (ES6+)</li>
+                        <li>React.js / Vanilla JS</li>
+                        <li>HTML5 Semántico & CSS3</li>
+                        <li>Tailwind CSS / Bootstrap</li>
+                    </ul>
+                </div>
+
+                <div class="tech-card">
+                    <h3>Herramientas & DevOps</h3>
+                    <ul>
+                        <li>Git & GitHub (Conventional Commits)</li>
+                        <li>Docker (Contenedores básicos)</li>
+                        <li>Postman / Bruno (Pruebas de API)</li>
+                        <li>Linux / Entorno Bash</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyectos Destacados -->
+        <section id="proyectos" class="section container">
+            <h2 class="section-title"><span>03.</span> Proyectos Destacados</h2>
+
+            <div class="projects-list">
+
+                <!-- Proyecto 1 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="project-type">Full Stack</span>
+                        <h3>[Nombre del Proyecto Principal]</h3>
+                    </div>
+                    <p class="project-description">
+                        Sistema web de administración e inventario en tiempo real. Permite la gestión de usuarios,
+                        filtrado de datos dinámico y control de acceso basado en roles.
+                    </p>
+                    <div class="project-details">
+                        <h4>Decisiones Técnicas:</h4>
+                        <ul>
+                            <li>Backend con <strong>FastAPI</strong> y validación de entrada mediante
+                                <strong>Pydantic</strong>.
+                            </li>
+                            <li>Autenticación segura basada en tokens <strong>JWT</strong> con contraseñas encriptadas.
+                            </li>
+                            <li>Persistencia en <strong>PostgreSQL</strong> usando <strong>SQLAlchemy</strong> para
+                                consultas eficientes.</li>
+                            <li>Frontend responsivo con consumo de API REST mediante llamadas
+                                <code>fetch</code>/<code>axios</code>.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="project-techs">
+                        <span>Python</span>
+                        <span>FastAPI</span>
+                        <span>PostgreSQL</span>
+                        <span>JavaScript</span>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/tu-usuario/repo-proyecto-1" target="_blank" rel="noopener">Código en
+                            GitHub →</a>
+                        <a href="https://tu-demo-desplegada.com" target="_blank" rel="noopener">Demo en Vivo ↗</a>
+                    </div>
+                </article>
+
+                <!-- Proyecto 2 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="project-type">Backend & API</span>
+                        <h3>[Nombre del Segundo Proyecto]</h3>
+                    </div>
+                    <p class="project-description">
+                        API RESTful para plataforma de métricas y tareas. Diseñada bajo arquitectura modular con
+                        documentación Swagger generada automáticamente.
+                    </p>
+                    <div class="project-details">
+                        <h4>Decisiones Técnicas:</h4>
+                        <ul>
+                            <li>Desarrollado en <strong>Django REST Framework</strong> aplicando migración continua de
+                                BD.</li>
+                            <li>Manejo de estados HTTP estandarizados y filtrado de consultas por parámetros URL.</li>
+                            <li>Soporte para variables de entorno (<code>.env</code>) previniendo fuga de credenciales.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="project-techs">
+                        <span>Python</span>
+                        <span>Django REST</span>
+                        <span>SQLite</span>
+                        <span>Swagger</span>
+                        <span>Git</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/tu-usuario/repo-proyecto-2" target="_blank" rel="noopener">Código en
+                            GitHub →</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Formación y Prácticas -->
+        <section id="formacion" class="section container">
+            <h2 class="section-title"><span>04.</span> Formación y Buenas Prácticas</h2>
+
+            <div class="grid-2">
+                <div class="info-box">
+                    <h3>Formación Académica</h3>
+                    <p class="institution">[Tu Carrera o Curso - ej. Ingeniería Informática / Tecnólogo en Desarrollo]
+                    </p>
+                    <p class="date">[Nombre de Universidad / Instituto] | En Cursada</p>
+                    <ul>
+                        <li>Estructuras de datos y algoritmos.</li>
+                        <li>Programación Orientada a Objetos (POO) y Patrones de Diseño.</li>
+                        <li>Bases de Datos Relacionales y Normalización (1FN a 3FN).</li>
+                    </ul>
+                </div>
+
+                <div class="info-box">
+                    <h3>Flujo de Trabajo Developer</h3>
+                    <ul>
+                        <li><strong>PEP 8:</strong> Código Python estandarizado, ordenado y tipado (<em>type
+                                hints</em>).</li>
+                        <li><strong>Git Flow:</strong> Commits atómicos con mensajes claros (<code>feat:</code>,
+                            <code>fix:</code>, <code>docs:</code>).
+                        </li>
+                        <li><strong>Documentación:</strong> <code>README.md</code> descriptivos con instrucciones
+                            completas de instalación local.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto" class="section container text-center">
+            <h2 class="section-title"><span>05.</span> Contacto</h2>
+            <p class="contact-text">
+                Estoy disponible para oportunidades laborales como desarrollador Python Trainee / Junior o proyectos
+                Full Stack.
+            </p>
+            <div class="contact-box">
+                <a href="mailto:tu-correo@ejemplo.com" class="btn btn-primary btn-large">ignaciakrishna23@gmail.cl</a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/tu-usuario" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://linkedin.com/in/tu-usuario" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2026 Krishna López. Desarrollado con HTML, CSS y JS.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

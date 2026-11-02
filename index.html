@@ -81,56 +81,80 @@
       </div>
 
       <div class="wrap hero__wrap">
-        <p class="hero__badge">
-          <span class="dot"></span>
-          Disponible para práctica · 2026
-        </p>
+        <div class="hero__layout">
 
-        <h1 class="hero__title">
-          <span class="hero__line">
-            <span class="hero__prompt">const</span> krishna
-          </span>
-          <span class="hero__line hero__line--accent">
-            <span class="hero__muted">=</span> developer<span class="hero__semi">;</span>
-          </span>
-        </h1>
+          <div class="hero__content">
+            <p class="hero__badge">
+              <span class="dot"></span>
+              Disponible para práctica · 2026
+            </p>
 
-        <p class="hero__sub">
-          <span class="hero__typed" id="typed" aria-live="polite"></span>
-          <span class="hero__cursor" aria-hidden="true">▊</span>
-        </p>
+            <h1 class="hero__title">
+              <span class="hero__line">
+                <span class="hero__prompt">const</span> krishna
+              </span>
+              <span class="hero__line hero__line--accent">
+                <span class="hero__muted">=</span> developer<span class="hero__semi">;</span>
+              </span>
+            </h1>
 
-        <p class="hero__lead">
-          Estudiante de 4° medio técnico en <strong>Programación</strong> y desarrolladora
-          Front-End en formación. Construyo interfaces limpias, funcionales y responsivas
-          con HTML, CSS y JavaScript — y exploro el backend con Python, Flask y MySQL.
-        </p>
+            <p class="hero__sub">
+              <span class="hero__typed" id="typed" aria-live="polite"></span>
+              <span class="hero__cursor" aria-hidden="true">▊</span>
+            </p>
 
-        <div class="hero__cta">
-          <a class="btn btn--solid" href="#projects">
-            ver proyectos
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path d="M5 12h14M13 5l7 7-7 7" />
-            </svg>
-          </a>
-          <a class="btn btn--line" href="#contact">hablemos</a>
-        </div>
+            <p class="hero__lead">
+              Estudiante de 4° medio técnico en <strong>Programación</strong> y desarrolladora
+              Front-End en formación. Construyo interfaces limpias, funcionales y responsivas
+              con HTML, CSS y JavaScript — y exploro el backend con Python, Flask y MySQL.
+            </p>
 
-        <div class="hero__status" aria-hidden="true">
-          <div class="status-card">
-            <div class="status-card__bar">
-              <span class="status-card__dot"></span>
-              <span class="status-card__dot"></span>
-              <span class="status-card__dot"></span>
-              <span class="status-card__file">krishna.json</span>
+            <div class="hero__cta">
+              <a class="btn btn--solid" href="#projects">
+                ver proyectos
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14M13 5l7 7-7 7" />
+                </svg>
+              </a>
+              <a class="btn btn--line" href="#contact">hablemos</a>
             </div>
-            <pre
-              class="status-card__code"><span class="c-key">"rol"</span>: <span class="c-str">"Front-End Junior"</span>,
+          </div>
+
+          <aside class="hero__aside">
+            <div class="profile-card">
+              <div class="profile-card__bar">
+                <span class="profile-card__dot"></span>
+                <span class="profile-card__dot"></span>
+                <span class="profile-card__dot"></span>
+                <span class="profile-card__file">~/perfil.jpg</span>
+              </div>
+              <div class="profile-card__img-wrap">
+                <img class="profile-card__img" src="static/img/perfil.jpg" alt="Retrato de Krishna López" width="400"
+                  height="400" loading="eager" decoding="async">
+                <span class="profile-card__badge">online</span>
+              </div>
+              <div class="profile-card__meta">
+                <p class="profile-card__name">krishna_lópez</p>
+                <p class="profile-card__role">front-end junior</p>
+              </div>
+            </div>
+
+            <div class="status-card">
+              <div class="status-card__bar">
+                <span class="status-card__dot"></span>
+                <span class="status-card__dot"></span>
+                <span class="status-card__dot"></span>
+                <span class="status-card__file">krishna.json</span>
+              </div>
+              <pre
+                class="status-card__code"><span class="c-key">"rol"</span>: <span class="c-str">"Front-End Junior"</span>,
 <span class="c-key">"ubicación"</span>: <span class="c-str">"San Ramón, CL"</span>,
 <span class="c-key">"estado"</span>: <span class="c-str">"aprendiendo"</span>,
 <span class="c-key">"stack"</span>: [<span class="c-str">"HTML"</span>, <span class="c-str">"CSS"</span>, <span class="c-str">"JS"</span>, <span class="c-str">"Python"</span>]</pre>
-          </div>
+            </div>
+          </aside>
+
         </div>
       </div>
     </section>
@@ -314,7 +338,7 @@
             <li>Atención al cliente</li>
             <li>Responsabilidad y compromiso</li>
             <li>Adaptabilidad</li>
-            <li>Lengua de Señas Chilena</li>
+            <li>Lengua de Señas Chilena básica</li>
           </ul>
         </div>
       </div>
@@ -331,12 +355,18 @@
 
         <div class="projects">
 
+          <!-- Proyecto 01 -->
           <article class="project project--featured reveal">
-            <div class="project__meta">
-              <span class="project__num">01 / destacado</span>
-              <span class="project__year">2025</span>
-            </div>
+            <figure class="project__media">
+              <img src="static/img/proyectos/save-the-city.png" alt="Captura del juego web Save the City" width="1200"
+                height="750" loading="lazy" decoding="async">
+              <figcaption class="project__cap">Save the City · 2025</figcaption>
+            </figure>
             <div class="project__body">
+              <div class="project__meta">
+                <span class="project__num">01 / destacado</span>
+                <span class="project__year">2025</span>
+              </div>
               <h3 class="project__title">Save the City</h3>
               <p class="project__role">Líder de proyecto · desarrollo en equipo</p>
               <p class="project__desc">
@@ -358,12 +388,18 @@
             </div>
           </article>
 
+          <!-- Proyecto 02 -->
           <article class="project reveal">
-            <div class="project__meta">
-              <span class="project__num">02</span>
-              <span class="project__year">2026</span>
-            </div>
+            <figure class="project__media">
+              <img src="static/img/proyectos/portafolio.jpg" alt="Captura del portafolio personal de Krishna López"
+                width="1200" height="750" loading="lazy" decoding="async">
+              <figcaption class="project__cap">Portafolio Personal · 2026</figcaption>
+            </figure>
             <div class="project__body">
+              <div class="project__meta">
+                <span class="project__num">02</span>
+                <span class="project__year">2026</span>
+              </div>
               <h3 class="project__title">Portafolio Personal</h3>
               <p class="project__role">Proyecto personal</p>
               <p class="project__desc">
@@ -384,18 +420,26 @@
             </div>
           </article>
 
+          <!-- Proyecto 03 -->
           <article class="project reveal">
-            <div class="project__meta">
-              <span class="project__num">03</span>
-              <span class="project__year">2025</span>
-            </div>
+            <figure class="project__media">
+              <img src="static/img/landing.jpg" alt="Captura de la landing page responsiva" width="1200" height="750"
+                loading="lazy" decoding="async">
+              <figcaption class="project__cap">Landing Page · 2025</figcaption>
+            </figure>
             <div class="project__body">
-              <h3 class="project__title">Landing Page Responsiva</h3>
+              <div class="project__meta">
+                <span class="project__num">03</span>
+                <span class="project__year">2025</span>
+              </div>
+              <h3 class="project__title">Certificación full-stack-python</h3>
               <p class="project__role">Práctica de maquetación</p>
               <p class="project__desc">
-                Ejercicio de maquetación semántica y diseño responsivo usando Flexbox, Grid y
-                componentes de Bootstrap. Enfoque en jerarquía visual, variables CSS y
-                componentes reutilizables.
+                Certificación Full Stack Python · Skillnest
+                Proyecto Cinepedia: aplicación web con Flask y MySQL. Implementa autenticación con Bcrypt, CRUD de
+                películas, sistema de comentarios con permisos por autor y base de datos relacional con claves foráneas
+                y borrado en cascada. Desarrollado siguiendo el patrón MVC y desplegado con control de versiones en
+                GitHub.
               </p>
               <ul class="project__tags">
                 <li>HTML5</li>
@@ -404,17 +448,25 @@
                 <li>Responsive</li>
               </ul>
               <div class="project__links">
-                <a class="link" href="#" target="_blank" rel="noopener">ver repositorio ↗</a>
+                <a class="link"
+                  href="https://github.com/krishnalopez/certificacion_1_krishna_lopez/tree/main/secures_users"
+                  target="_blank" rel="noopener">ver repositorio ↗</a>
               </div>
             </div>
           </article>
 
+          <!-- Proyecto 04 -->
           <article class="project reveal">
-            <div class="project__meta">
-              <span class="project__num">04</span>
-              <span class="project__year">2026 · en curso</span>
-            </div>
+            <figure class="project__media">
+              <img src="static/img/proyectos/PYTHON.png" alt="Captura de los ejercicios Full Stack Python" width="1200"
+                height="750" loading="lazy" decoding="async">
+              <figcaption class="project__cap">Full Stack Python · 2026</figcaption>
+            </figure>
             <div class="project__body">
+              <div class="project__meta">
+                <span class="project__num">04</span>
+                <span class="project__year">2026 · en curso</span>
+              </div>
               <h3 class="project__title">Ejercicios Full Stack Python</h3>
               <p class="project__role">Repositorio de práctica</p>
               <p class="project__desc">
